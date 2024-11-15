@@ -29,13 +29,13 @@ export default function DashboardAsideNavbar() {
             pathname === '/dashboard/projects' && 'bg-gray-300'
           )}
         >
-           Vehiculos
+           Vehicles
         </Link>
         <a
           className="flex gap-3 p-2 cursor-pointer"
           onClick={() => signOut({ callbackUrl: '/' })}
         >
-           Cerrar Sesión
+           Log out
         </a>
       </nav>
     </aside>

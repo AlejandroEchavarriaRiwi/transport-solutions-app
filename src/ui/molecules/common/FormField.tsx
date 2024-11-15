@@ -44,7 +44,6 @@ export const FormField = <T extends FieldValues>({
             id={id || label.toLowerCase()}
             type={type}
             error={error?.message}
-            placeholder={placeholder || `Ingrese su ${label.toLowerCase()}`}
             {...field}
           />
         )}
