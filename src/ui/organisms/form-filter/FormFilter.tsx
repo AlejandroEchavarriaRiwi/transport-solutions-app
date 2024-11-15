@@ -32,7 +32,7 @@ export default function FormFilter({ onSubmit }: FormFilterProps) {
   };
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)} className="flex justify-center items-center gap-9">
+    <form onSubmit={handleSubmit(onSubmit)} className="container flex justify-center items-center gap-9">
       <FormField label="License Plate" type="text" name="licensePlate" control={control} />
       <FormField label="Year" type="text" name="year" control={control} />
       <FormField label="Make" type="text" name="make" control={control} />

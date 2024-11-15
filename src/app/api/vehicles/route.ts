@@ -7,7 +7,7 @@ export async function GET(req: Request) {
   try {
     const { searchParams } = new URL(req.url);
     const page = searchParams.get("page") || "1";
-    const itemsPerPage = searchParams.get("itemsPerPage") || "10";
+    const itemsPerPage = searchParams.get("itemsPerPage") || "4";
     const filters = Object.fromEntries(searchParams.entries());
 
     // Obtener sesión

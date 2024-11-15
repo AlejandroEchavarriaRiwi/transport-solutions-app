@@ -21,7 +21,7 @@ export default function VehiclesManagementPage() {
   };
 
   return (
-    <div className="w-full p-10">
+    <div className="container m-auto">
       <h1 className="font-extrabold text-2xl mb-10">Vehicles Management</h1>
 
       <FormFilter onSubmit={handleFilterSubmit} />

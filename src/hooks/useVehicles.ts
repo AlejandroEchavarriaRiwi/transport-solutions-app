@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Datum, IGetVehicles } from "@/app/core/application/dto/common/vehicles-response.dto";
 import { Filters } from "@/app/core/application/dto";
 
-export function useVehicles(initialFilters: Filters = {}, itemsPerPage: number = 10) {
+export function useVehicles(initialFilters: Filters = {}, size: number = 4) {
     const [vehicles, setVehicles] = useState<Datum[]>([]);
     const [currentPage, setCurrentPage] = useState(1);
     const [totalPages, setTotalPages] = useState(1);
@@ -17,7 +17,7 @@ export function useVehicles(initialFilters: Filters = {}, itemsPerPage: number =
       try {
         const params = new URLSearchParams({
           page: page.toString(),
-          itemsPerPage: itemsPerPage.toString(),
+          size: size.toString(),
           ...filters,
         });
   
